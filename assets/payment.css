@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #28223F;
+	font-family: 'Roboto Condensed', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+
+
+.card-container {
+	background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	width: 40%;
+	max-width: 100%;
+	text-align: center;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.top img{
+    width: 50%;
+    text-align: center;
+}
+
+.dot{
+    z-index: 1;
+    width: 7px;
+    height: 7px;
+    background: red;
+    border-radius: 50%;
+    transform: translate(-250%, -150%);
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -1rem;
+}
+.middle h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.extra-detail{
+    display: flex;
+    justify-content: center;
+}
+.detail {
+   padding-right: 2rem;
+   font-size: 0.8rem;
+   display: flex;
+   flex-direction: column;
+   align-items:flex-start
+}
+.detail p {
+    margin-bottom:0;
+    font-size: 1.5rem;
+    /* padding-bottom:0; */
+}
+.detail-price{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end
+}
+.detail-price p{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.border{
+    /* position: absolute; */
+    background-color:#535353;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    width:60%;
+    height:auto;
+    margin: 0 auto;
+    transform: translateY(-90%);
+}
+#dark{
+    z-index: 2;
+}
+.form-box {
+	background-color: #1F1A36;
+	padding: 15px;
+	margin-top: 5px;
+} 
+.card-box{
+    background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+    padding: 20px 5%;
+	width: 80%;
+	max-width: 100%;
+    text-align: center;
+    margin: 0 auto 1rem;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pay-instruction h3 {
+    color: #2D2747;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.pay-instruction p{
+    font-size:17px;
+    text-align: left;
+    color:#2D2747;
+}
+.pay-instruction{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.name-area h3{
+    margin-bottom: 5px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing:0.1rem;
+    text-align: start;
+    color: #535353;
+    font-weight: 400;
+}
+.name-area input.input-no {
+    border: 1px solid #535353;
+    border-radius: 0.2rem;
+    padding:0.5rem;
+    text-transform: uppercase;
+    letter-spacing:0.1rem;
+    color: #535353;
+    font-weight:600;
+    margin-bottom:1.2em;
+    width:100%;
+
+}
+.payment-buttons{
+    width: 100%;
+}
+.pay-btn{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #2D2747;
+    border-radius: 5px;
+    padding:0.6rem;
+    width: 100%;
+    margin-bottom: .5em;
+    border:1px solid #fff;
+    cursor:pointer;
+}
+.btn-sent{
+    background:#5CB85C;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding:0.6rem;
+    width: 100%;
+    margin-bottom: .5em;
+    cursor:pointer;
+}
+.pay-btn:hover{
+    color:#2D2747;
+    background-color: #fff;
+    border:1px solid #2D2747;
+    
+}
+.powered{
+    font-size: 15px;
+    color: #fff;
+}
+.powered a{
+    color: #fff;
+}
+.error{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #FF9494;
+    color: #fff;
+}
+
+@media screen and (max-width: 1366px) {
+    .card-container{
+        width:50%;
+    }
+    .card-box{
+        padding-left:5%;
+        padding-right:5%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .card-container{
+        width:60%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card-box{
+        padding: 20px 3%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .card-container {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 490px) {
+    .card-container {
+        width: 95%;
+    }
+    .detail-price p {
+        font-size: 1.1rem;
+    }
+    .detail p {
+        font-size: 1.1rem;
+    }
+    .card-box {
+        width:90%;
+    }
+}
